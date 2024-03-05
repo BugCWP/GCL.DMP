@@ -1,0 +1,13 @@
+﻿@page "/"
+@using DMP.Shared
+@attribute [TabItemOption(Text = "Index", Closable = false)]
+
+
+<Split Basis="30%" style="height:calc(100vh);">
+    <FirstPaneTemplate>
+        <FileTree></FileTree>
+    </FirstPaneTemplate>
+    <SecondPaneTemplate>
+        <div class="d-flex justify-content-center align-items-center h-100">我是右侧面板</div>
+    </SecondPaneTemplate>
+</Split>

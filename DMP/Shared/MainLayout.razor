@@ -1,0 +1,17 @@
+﻿@inherits LayoutComponentBase
+
+<Layout SideWidth="0" IsPage="true" 
+        TabDefaultUrl="/"
+        class="@Theme">
+    <Header>
+        <img class="layout-logo" src="images/gcl.png" style="width:30px;height:30px"/>
+        <span class="ms-3 flex-sm-fill d-none d-sm-block">GCL</span>
+       
+    </Header>
+    <Main>
+        <CascadingValue Value="this" IsFixed="true">
+            @Body
+        </CascadingValue>
+    </Main>
+</Layout>
+
